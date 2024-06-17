@@ -28,7 +28,7 @@ public interface IReaderConfiguration : IParserConfiguration
 	/// throw a <see cref="MissingFieldException"/>. You can supply your own function to do other things
 	/// like logging the issue instead of throwing an exception.
 	/// </summary>
-	MissingFieldFound MissingFieldFound { get; }
+	MissingFieldFound? MissingFieldFound { get; }
 
 	/// <summary>
 	/// Gets the function that is called when a reading exception occurs.
