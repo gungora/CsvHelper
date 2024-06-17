@@ -108,7 +108,7 @@ public record CsvConfiguration : IReaderConfiguration, IWriterConfiguration
 	public virtual MemberTypes MemberTypes { get; set; } = MemberTypes.Properties;
 
 	/// <inheritdoc/>
-	public virtual MissingFieldFound MissingFieldFound { get; set; } = ConfigurationFunctions.MissingFieldFound;
+	public virtual MissingFieldFound? MissingFieldFound { get; set; } = ConfigurationFunctions.MissingFieldFound;
 
 	/// <inheritdoc/>
 	public virtual CsvMode Mode { get; set; }
